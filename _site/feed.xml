@@ -4,10 +4,10 @@
     <title>You are reading Federico Castagnini&#39;s blog</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://facastagnini.github.io/blog/</link>
-    <atom:link href="http://facastagnini.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jun 2015 19:58:25 -0400</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 19:58:25 -0400</lastBuildDate>
+    <link>http://facastagnini.github.io/</link>
+    <atom:link href="http://facastagnini.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 29 Jun 2015 20:27:35 -0400</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 20:27:35 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2015 12:46:08 -0400</pubDate>
-        <link>http://facastagnini.github.io/blog/jekyll/update/2015/06/29/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://facastagnini.github.io/blog/jekyll/update/2015/06/29/welcome-to-jekyll.html</guid>
+        <link>http://facastagnini.github.io/jekyll/update/2015/06/29/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://facastagnini.github.io/jekyll/update/2015/06/29/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
