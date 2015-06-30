@@ -1,5 +1,6 @@
 Gemfile.lock
 .sass-cache
+#_site
 
 # SublimeText
 *.sublime-workspace
