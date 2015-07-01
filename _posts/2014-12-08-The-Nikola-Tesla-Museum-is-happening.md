@@ -1,5 +1,8 @@
 ---
 title: The Nikola Tesla Museum is happening!
+published: true
+tags:
+- tesla
 ---
 So a while ago I run across [this](https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum) Indiegogo campaign, and couldn't avoid it... I end up buying a brick for the long awaited Nikola Tesla Museum in the US.
 
