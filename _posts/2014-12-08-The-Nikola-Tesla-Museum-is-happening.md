@@ -13,7 +13,8 @@ A friend help me and we choose a line of Howard Phillips Lovecraft.
 
 I cant wait to visit [Wardenclyffe](http://en.wikipedia.org/wiki/Wardenclyffe_Tower) and wander around looking for my brick!
 
+> ## “Creative minds are uneven.” - H.P.L.
+
 ![Don Nikola](https://upload.wikimedia.org/wikipedia/commons/5/56/Tesla3.jpg)
 
-
-> ## “Creative minds are uneven.” - H.P.L.
+2015-07-10 Update: The engraved bricks have been delivered to Wardenclyffe and are ready to install.
