@@ -5,4 +5,4 @@ permalink: /about/
 ---
 
 [ ![Github](/img/GitHub-Mark-64px.png)](https://github.com/facastagnini)
-[ ![LinkedIn](/img/In-Black-59px-TM.png)](https://www.linkedin.com/in/fcastagnini)
+[ ![LinkedIn](/img/In-Black-59px-TM.png)](http://www.linkedin.com/in/fcastagnini)
