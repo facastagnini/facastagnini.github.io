@@ -7,7 +7,7 @@ task :test do
   HTML::Proofer.new("./_site", {
     :href_ignore => [
       "#",
-      "linkedin.com"
+      "https://www.linkedin.com/in/fcastagnini"
     ]
   }).run
 end
