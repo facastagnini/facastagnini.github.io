@@ -5,7 +5,7 @@ tags:
 - monitoring
 ---
 
-RSYSLOG is the rocket-fast system for log processing. (source [rsyslog.com](http://www.rsyslog.com/}))
+RSYSLOG is the rocket-fast system for log processing. (source [rsyslog.com](http://www.rsyslog.com/))
 Zabbix is a enterprise-class monitoring solution. (source [zabbix.com](http://www.zabbix.com/))
 
 Said that, I can tell the story.
