@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'github-pages'
-gem 'jekyll'
-gem 'html-proofer'
+
+group :test do
+  gem "rake"
+  gem 'jekyll'
+  gem 'html-proofer'
+end
