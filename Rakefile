@@ -23,7 +23,7 @@ def coverage
 end
 
 def build_site
-  sh 'bundle exec jekyll build --config _config.yml,_config_test.yml --drafts'
+  sh 'bundle exec jekyll build --config _config.yml --drafts'
 end
 
 def doctor_site
