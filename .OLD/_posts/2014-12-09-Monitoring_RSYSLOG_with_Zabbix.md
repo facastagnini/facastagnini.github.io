@@ -1,11 +1,8 @@
 ---
-layout: post
 title: Monitoring RSYSLOG with Zabbix
 published: true
 tags:
 - monitoring
-fullview: false
-description: Some time ago I wanted to monitor some RSYSLOG internals with Zabbix...
 ---
 
 RSYSLOG is the rocket-fast system for log processing. (source [rsyslog.com](http://www.rsyslog.com/))
@@ -17,5 +14,5 @@ Some time ago I wanted to monitor some RSYSLOG internals with Zabbix. Since I co
 
 The installation is really simple and takes advantage of the Zabbix auto-discovery rules to configure itself and produce nice graphs. I keep the install instructions in a github repository, so please [check it out](https://github.com/facastagnini/zabbix-rsyslog#installation).
 
-![zabbix1](/assets/media/Monitoring_RSYSLOG_with_Zabbix1.png)
-![zabbix2](/assets/media/Monitoring_RSYSLOG_with_Zabbix2.png)
+![zabbix1](/assets/Monitoring_RSYSLOG_with_Zabbix1.png)
+![zabbix2](/assets/Monitoring_RSYSLOG_with_Zabbix2.png)

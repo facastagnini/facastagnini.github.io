@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Toss that flash player away
 published: true
-fullview: true
 ---
 
 Yet another threat menacing billions of users was discovered in Flash Player.

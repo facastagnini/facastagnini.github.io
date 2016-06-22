@@ -1,9 +1,6 @@
 ---
-layout: post
 title: Why I am syncing my files with SyncThing
 published: true
-fullview: false
-description: So I have a desktop computer and a laptop, and I want to be able to switch from one to another...
 ---
 # The scenario
 
