@@ -10,7 +10,7 @@ namespace :assets do
 end
 
 def config
-  config = YAML.load_file('_config_test.yml')
+  config = YAML.load_file('_config.yml')
   config['proofer'].keys.each do |key|
     config['proofer'][key.to_sym] = config['proofer'].delete(key)
   end
