@@ -32,7 +32,7 @@ end
 
 def html_proofer
   puts "HTML Proofer version: #{HTMLProofer::VERSION}"
-  HTMLProofer.check_directory('./_site', config['proofer']).run
+  HTMLProofer.check_directory('./_site').run
 end
 
 task :test do
