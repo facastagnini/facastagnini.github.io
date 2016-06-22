@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.org/facastagnini/facastagnini.github.io.svg?branch=master)](https://travis-ci.org/facastagnini.github.io)
 
 ```
+brew install rbenv
+sudo rbenv install 2.1.7
+rbenv local 2.1.7
 bundle install
 bundle exec rake
 ```
