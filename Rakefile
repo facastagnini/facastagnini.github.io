@@ -35,7 +35,14 @@ def html_proofer
   HTMLProofer.check_directory('./_site', {
 		:url_ignore => [
       "https://linkedin.com/in/fcastagnini",
-      "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/"
+      "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/",
+      # we need to ignore the permalink
+      "/Look_at_me_Dad_I_am_blogging",
+      "/Monitoring_RSYSLOG_with_Zabbix",
+      "/Toss_that_flash_player_away",
+      "/Why_I_am_syncing_my_files_with_SyncThing",
+      "/puppet-ram-mountpoint",
+      "",
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
