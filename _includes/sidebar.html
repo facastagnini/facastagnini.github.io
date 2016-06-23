@@ -53,6 +53,13 @@
 			</a>
 		</li>
 		{% endif %}
+		{% if site.author.hackerrank %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://hackerrank.com/{{ site.author.hackerrank }}">
+				<i class="fa fa-terminal fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		{% if site.author.rss_path %}
 		<li>
 			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
