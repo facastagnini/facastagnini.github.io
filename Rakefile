@@ -32,7 +32,14 @@ end
 
 def html_proofer
   puts "HTML Proofer version: #{HTMLProofer::VERSION}"
-  HTMLProofer.check_directory('./_site').run
+  HTMLProofer.check_directory('./_site', {
+		:href_ignore => [
+			"#",
+			# The additional anchor link is picked up from the Geomap JSON, but shouldn't be flagged
+			"\\\"#\\\"",
+		]
+  }).run
+  # :disable_external => true
 end
 
 task :test do

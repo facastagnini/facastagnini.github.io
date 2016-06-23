@@ -2,6 +2,7 @@
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
+permalink: /:title
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
@@ -13,7 +14,9 @@ defaults:
   -
     scope:
       path: "" # empty string for all files
+      type: "posts"
     values:
+      layout: "post"
       title: Federico Castagnini's blog
 
 description: Stylish Jekyll Theme
@@ -25,6 +28,7 @@ author:
   # pinterest: asd123
   linkedin: fcastagnini
   bio: A minimal blog about technology.
+  # used to grab the gravatar
   email_md5: 4de95cb8b15ef0d29ccd2f63695f1cec
 
 # rss_path: feed.xml
