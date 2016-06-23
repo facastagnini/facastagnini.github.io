@@ -33,7 +33,10 @@ end
 def html_proofer
   puts "HTML Proofer version: #{HTMLProofer::VERSION}"
   HTMLProofer.check_directory('./_site', {
-		:url_ignore => ["https://linkedin.com/in/fcastagnini"],
+		:url_ignore => [
+      "https://linkedin.com/in/fcastagnini",
+      "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/"
+    ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
     :check_favicon => false,
