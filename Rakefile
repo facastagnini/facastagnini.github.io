@@ -42,7 +42,7 @@ def html_proofer
       "/Toss_that_flash_player_away",
       "/Why_I_am_syncing_my_files_with_SyncThing",
       "/puppet-ram-mountpoint",
-      "",
+      "/The-Nikola-Tesla-Museum-is-happening"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
