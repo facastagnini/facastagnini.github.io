@@ -40,8 +40,10 @@ def html_proofer
     :check_html => false,
     :disable_external => false,
     :empty_alt_ignore => false,
-    :enforce_https => false
-  }).run
+    :enforce_https => false,
+    :typhoeus => {
+      :headers => { "User-Agent" => "Mozilla/5.0 (compatible; My New User-Agent)" }
+    }}).run
 end
 
 task :test do
