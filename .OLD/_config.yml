@@ -1,0 +1,38 @@
+
+
+Site settings
+title: "You are reading Federico Castagnini's blog"
+description: "A minimal blog about technology."
+url: "https://facastagnini.github.io"
+author:
+  name: "Federico Castagnini"
+  email: "federico.castagnini@gmail.com"
+  url: "https://facastagnini.github.io"
+  bitcoin_address: "1DFB4uf8iHoDBHkQy1inuwoHEdscim5waq"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+gems: ['jekyll-paginate']
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false

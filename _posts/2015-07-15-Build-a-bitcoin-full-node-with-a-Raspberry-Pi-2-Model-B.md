@@ -1,6 +1,9 @@
 ---
+layout: post
 title: Build a bitcoin full node with a Raspberry Pi 2 Model B
 published: false
+fullview: false
+description: lalala
 ---
 
 

@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Look at me Dad, I am blogging!
 published: true
+fullview: true
 ---
 After so many years delaying the moment, I am finally here.
 

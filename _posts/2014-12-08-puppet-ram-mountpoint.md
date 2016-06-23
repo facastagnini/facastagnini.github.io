@@ -1,9 +1,12 @@
-ghlight shell %}---
+---
+layout: post
 title: Manage your ram mount points with this useful puppet module
 published: true
 tags:
 - puppet
 - devops
+fullview: false
+description: Use RAM memory to do I/O intensive operations instead hitting the HDD, or wearing off our precious SSD drives...
 ---
 In this times that we have to live in, it is more convenient/efficient to use RAM memory to do I/O intensive operations instead hitting the HDD, or wearing off our precious SSD drives.
 
