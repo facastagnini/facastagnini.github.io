@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/fcastagnini
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://facastagnini.github.io
+  * I am fcastagnini (https://keybase.io/fcastagnini) on keybase.
+  * I have a public key with fingerprint E208 0458 EAB2 7366 F665  EBD9 2093 7D81 760D 43DC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010179df98e783e3077c412f00b92c90788f9c1c5bacb2697907d0b8dc1a9637ba5f0a",
+            "fingerprint": "e2080458eab27366f665ebd920937d81760d43dc",
+            "host": "keybase.io",
+            "key_id": "20937d81760d43dc",
+            "kid": "010179df98e783e3077c412f00b92c90788f9c1c5bacb2697907d0b8dc1a9637ba5f0a",
+            "uid": "92c5abeaead779124a9fa72d47d15819",
+            "username": "fcastagnini"
+        },
+        "service": {
+            "hostname": "facastagnini.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1472153921,
+    "expire_in": 157680000,
+    "prev": "3b550b1732951670e9d072949e86ebe60ad8ec713cf11735d8115b687ef0bb8c",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkm1QFVUYx+EWiDcZTJkSBufa2jAEF9qXu3t2r2AgQ02moFRDjtZlz+65sAF7
+r7t7ETRyaEA0MwUmaRCJFBEBNYdxRuTtypsgkmVDhBAwAU6WJU5iGFntpZy+9LHz
+5cx5zu//P//nmXPI/zEvP+8Ls+uPj8Q+8Zp3/y3oldL+csIuDDrEXMy6C8tACxvK
+FJGq2TIkEbNiOIETgBPtHIsASyEKB0CwEKQdxyFHChwOWNbOCYRAQ16AJMMBvSTi
+kBUFgucYCkCetuM8ZsbskpyGFKciyZpui0icxS00i3hIAoph7AxDIyhyJM5RQGQJ
+wOCihRIFXZjuUD0KPRzkVRQlOfSafrAtxPsP/n/O7Vqw0zU0DxGPeBEAjiAtPGfn
+ASlagEjQLMF5QBUpMp+FdNou8KrGp8mSLGF5Zky/yJYE5Jmtp5lHEP8vFZUmaeku
++HdzTsWhOQRHps6ka5pTtXo8tFynR7QDQds/djYoyaI+VF2RjRRVcsiYldBJQZM8
+/oQFkARNcSRhxlCOU1KQTfIQNGBYXF/6O0hB2bonBWkahwSgSI4mGIAjTsQByVk4
+xDIIIgbnRRYJgKAEO6FTtD5ugoYMC5Adh5D1zFxF22UHZrXoOfk03VKV0mRecykI
+yzPuM4Q87uXt5+XrY/B8Ny/j4qWP/qCrIOCPsG98NgUkRY+GBxr9R6L4599VlGMo
+7PLOV46H+Qf27mg97Bddmn/0fp+7xfD6sE1+b91acsvR56QA9+Y5d9b3mQPyA9iv
+rjA/1V1vo00JfUG1A2vmwW85NUuCmdUxqSkSDczGqZkG548J8a6MsZ4PDXtT7ps+
+2/OqMlpeNBi5bPvm5pLhqX3JOztuPyOW9FRFh9ZW944+aKrq+qK7rrN1LuJuw9Cn
+EUFxW1M3Vhe3b3nYWbr8h7WDq/bmfJwd1NFk7VcPqO1Ry30Sj5wabjx4Vz3/wZma
+FDUhMT3YNTQxcXY6Zs+fdeB88OyisvrAoZiJQ4Uhyz765eLuFRUFiZFjWRfr9vPi
+S2tKk8rCr8yPN9ZcKrmWWh575MSgkOV7Rx58MRJd/fpYGzOVGRaf3uV4s2PJ4Mz4
+tZDTZBws6D198v36yoqeZpSsVYX3hdjWUUn+5wLcXZ/j9xaNvDFNZc3/binajSaJ
+NvnCCXkmt+Gccy42duPKX9vKfP02hBabyrxzLt3qPJlhOjjd3ZR8/WZsY7wgDd34
+ubvz6tmi0OjJF96+3jo2sD61L1muNKplo47JZ0/9dGBbfkXoHeGdMy0RPoc3rByp
+/Y7JpafyV10xuAL9mwoeVleat32ZAG8krS5nurbenG2O+/ZeQfGmPINx8f6lxpmW
+T8ZvXx4N/Krw6SeRs6Rw4C2T+y8=
+=5krD
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fcastagnini
+
+==================================================================
+
