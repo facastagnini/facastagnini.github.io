@@ -8,7 +8,7 @@ highlighter: rouge
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: Federico Castagnini's blog
+title: Federico Ariel Castagnini's blog
 
 defaults:
   -
@@ -21,7 +21,7 @@ defaults:
 
 description: Stylish Jekyll Theme
 author:
-  name: Federico Castagnini
+  name: Federico Ariel Castagnini
   # email: federico.castagnini+fromjekyll@gmail.com
   github: facastagnini
   # twitter: dbtek
