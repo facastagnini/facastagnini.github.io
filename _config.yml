@@ -4,7 +4,7 @@ paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 permalink: /:title
 exclude: ["README.md"] # files to exclude
-highlighter: rogue
+highlighter: rouge
 markdown: kramdown
 disqus: dbyll
 google_analytics: UA-28304401-3
@@ -42,5 +42,5 @@ tags_path: tags.html
 
 BASE_PATH:
 
-plugins:
+gems:
   - jekyll-paginate
