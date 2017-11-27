@@ -43,7 +43,7 @@ This tools are awesome, they are solid and well tested because they have been ar
 
 I want privacy and full control of my data. I didn't feel like continue researching cloud providers, so I switched entirely to peer-to-peer alternatives. 
 
-## BitTorrent Sync (https://www.resilio.com/)
+## [BitTorrent Sync](https://www.resilio.com/)
 
 ### Pros
 - Peer-to-Peer
