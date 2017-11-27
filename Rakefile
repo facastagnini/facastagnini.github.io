@@ -36,7 +36,7 @@ def html_proofer
 		:url_ignore => [
       "https://linkedin.com/in/fcastagnini",
       "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/",
-      "https://www.resilio.com", # External link https://www.resilio.com failed: response code 0 means something's wrong.
+      "https://www.resilio.com",
       # we need to ignore the permalink
       "/Look_at_me_Dad_I_am_blogging",
       "/Monitoring_RSYSLOG_with_Zabbix",

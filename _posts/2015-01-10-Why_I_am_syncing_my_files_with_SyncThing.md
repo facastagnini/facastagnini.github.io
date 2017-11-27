@@ -59,7 +59,7 @@ I want privacy and full control of my data. I didn't feel like continue research
 - You have no control over the peers, once they have the key, they have access to the data.
 - Closed source
 
-## [SyncThing](http://syncthing.net/)
+## [SyncThing](https://syncthing.net/)
 
 ### Pros
 - Peer-to-Peer
