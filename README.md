@@ -4,8 +4,8 @@
 
 ```
 brew install rbenv
-sudo rbenv install 2.3.3
-rbenv local 2.3.3
+rbenv install
+gem install bundler
 bundle install
 bundle exec rake
 ```
