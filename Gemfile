@@ -12,7 +12,7 @@ group :test do
   gem 'jekyll'
   gem 'html-proofer'
   gem 'pry'
-  gem 'rubocop', :branch => :master, :github => 'bbatsov/rubocop'
+  gem 'rubocop'
 end
 
 group :jekyll_plugins do
