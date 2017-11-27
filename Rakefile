@@ -57,12 +57,10 @@ def html_proofer
 end
 
 task :test do
-  if ENV['CI']
-    # coverage
-    build_site
-    doctor_site
-    html_proofer
-  end
+  # coverage
+  build_site
+  doctor_site
+  html_proofer
 end
 
 task :default => :test
