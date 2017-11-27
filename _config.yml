@@ -9,6 +9,7 @@ markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
 title: Federico Ariel Castagnini's blog
+url: "https://facastagnini.github.io"
 
 defaults:
   -
