@@ -36,6 +36,7 @@ def html_proofer
 		:url_ignore => [
       "https://linkedin.com/in/fcastagnini",
       "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/",
+      "https://www.resilio.com",
       # we need to ignore the permalink
       "/Look_at_me_Dad_I_am_blogging",
       "/Monitoring_RSYSLOG_with_Zabbix",
@@ -57,12 +58,10 @@ def html_proofer
 end
 
 task :test do
-  if ENV['CI']
-    # coverage
-    build_site
-    doctor_site
-    html_proofer
-  end
+  # coverage
+  build_site
+  doctor_site
+  html_proofer
 end
 
 task :default => :test
