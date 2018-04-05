@@ -12,4 +12,4 @@ bundle install
 bundle exec rake
 ```
 
-Based on the template [dbyll](https://github.com/dbtek/dbyll/) by dbtek.
+Based on the template [dbyll](https://github.com/dbtek/dbyll/) by [dbtek](https://github.com/dbtek/).
