@@ -43,7 +43,8 @@ def html_proofer
       "/Toss_that_flash_player_away",
       "/Why_I_am_syncing_my_files_with_SyncThing",
       "/puppet-ram-mountpoint",
-      "/The-Nikola-Tesla-Museum-is-happening"
+      "/The-Nikola-Tesla-Museum-is-happening",
+      "/Picking_a_strobogrammatic_prime_domain_name"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
@@ -53,7 +54,12 @@ def html_proofer
     :empty_alt_ignore => false,
     :enforce_https => false,
     :typhoeus => {
-      :headers => { "User-Agent" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" }
+      :headers => { "User-Agent" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" },
+      :ssl_verifyhost => 0,
+      :ssl_verifypeer => false,
+      :followlocation => true,
+      :connecttimeout => 10,
+      :timeout => 30
     }}).run
 end
 
