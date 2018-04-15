@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Picking a strobogrammatic prime number domain name
-published: false
+published: true
 fullview: false
-description: The oddisey of picking a domain name can be simplyfied, just pick a number.
+description: Picking a domain name can be stresful, or you can just pick a pseudo-random number.
+
 ---
 # Why picking a strobogrammatic prime number domain name
 After several sessions thinking about a text based domain name and coming up with no good ideas, or finding out that the best ones where already taken, I decided to simplify the whole thing and just pick a number.
