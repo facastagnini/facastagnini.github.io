@@ -64,7 +64,7 @@ while x <= 999999:
 {% endhighlight %}
 
 {% highlight shell %}
-$ python3 ./strobogrammatic_prime_number_finder.py
+$ time python3 ./strobogrammatic_prime_number_finder.py
 strobogrammatic prime:  16091
 strobogrammatic prime:  18181
 strobogrammatic prime:  19861
@@ -77,6 +77,7 @@ strobogrammatic prime:  191161
 strobogrammatic prime:  196961
 strobogrammatic prime:  686989
 strobogrammatic prime:  688889
+python3 ./strobogrammatic_prime_number_finder.py  0.83s user 0.01s system 98% cpu 0.852 total
 {% endhighlight %}
 
 # And the winner is... 191161.xyz
