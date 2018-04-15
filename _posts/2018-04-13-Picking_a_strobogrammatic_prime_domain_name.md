@@ -4,15 +4,18 @@ title: Picking a strobogrammatic prime number domain name
 published: true
 fullview: false
 description: Picking a domain name can be stresful, or you can just pick a pseudo-random number.
-
+tags:
+- python
 ---
-# Why picking a strobogrammatic prime number domain name
+# Why
 After several sessions thinking about a text based domain name and coming up with no good ideas, or finding out that the best ones where already taken, I decided to simplify the whole thing and just pick a number.
 If you can pick any number, why not picking a cool number...
 
 ## What is a strobogrammatic prime number?
 From [Wikipedia]
-    A strobogrammatic number is a number whose numeral is rotationally symmetric, so that it appears the same when rotated 180 degrees. In other words, the numeral looks the same right-side up and upside down (e.g., 69, 96, 1001). A strobogrammatic prime is a strobogrammatic number that is also a prime number, i.e., a number that is only divisible by one and itself.
+{% highlight text %}
+A strobogrammatic number is a number whose numeral is rotationally symmetric, so that it appears the same when rotated 180 degrees. In other words, the numeral looks the same right-side up and upside down (e.g., 69, 96, 1001). A strobogrammatic prime is a strobogrammatic number that is also a prime number, i.e., a number that is only divisible by one and itself.
+{% endhighlight %}
 
 ## Finding a strobogrammatic prime number
 I put together a simple script to find the numbers
@@ -60,7 +63,7 @@ while x <= 999999:
     x+=2
 {% endhighlight %}
 
-``` shell
+{% highlight shell %}
 $ python3 ./strobogrammatic_prime_number_finder.py
 strobogrammatic prime:  16091
 strobogrammatic prime:  18181
@@ -74,12 +77,13 @@ strobogrammatic prime:  191161
 strobogrammatic prime:  196961
 strobogrammatic prime:  686989
 strobogrammatic prime:  688889
-```
+{% endhighlight %}
 
-# 191161.xyz
-Because I want my dns to support DNSSEC ([reasons...]) I needed to pick a [TLD which root zone has been signed]. I choose some of the prime numbers and a couple cheap TLD, and after reviewing my options, I locked in with 191161.xyz for $5 a year.
+# The end result... 191161.xyz
+Because I want my dns to support DNSSEC ([reasons...]) I needed to pick a [TLD which root zone has been signed]. I choose some of the prime numbers and a couple cheap TLD, and after reviewing my options, I locked in with [191161.xyz] for $5 a year.
 
 
-[Wikipedia] https://en.wikipedia.org/wiki/Strobogrammatic_number
-[reasons...] https://webmasters.stackexchange.com/questions/35597/how-to-find-domain-registrar-and-dns-hosting-with-good-dnssec-support
-[TLD which root zone has been signed] https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
+[Wikipedia]: https://en.wikipedia.org/wiki/Strobogrammatic_number
+[reasons...]: https://webmasters.stackexchange.com/questions/35597/how-to-find-domain-registrar-and-dns-hosting-with-good-dnssec-support
+[TLD which root zone has been signed]: https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
+[191161.xyz]: https://191161.xyz
