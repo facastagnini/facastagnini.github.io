@@ -6,5 +6,9 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get upgrade -y 
+
 notifications:
   email: false
