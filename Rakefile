@@ -53,7 +53,10 @@ def html_proofer
     :empty_alt_ignore => false,
     :enforce_https => false,
     :typhoeus => {
-      :headers => { "User-Agent" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" }
+      :headers => { "User-Agent" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" },
+      :followlocation => true,
+      :connecttimeout => 10,
+      :timeout => 30
     }}).run
 end
 
