@@ -7,8 +7,8 @@ description: Picking a domain name can be stresful, or you can just pick a pseud
 tags:
 - python
 ---
-# Why
-After several sessions thinking about a text based domain name and coming up with no good ideas, or finding out that the best ones where already taken, I decided to simplify the whole thing and just pick a number.
+# Why...
+After several sessions of scratching my chin thinking about a text based domain name and coming up with no good ideas, or finding out that the best ones where already taken, I decided to simplify the whole thing and just pick a number.
 If you can pick any number, why not picking a cool number...
 
 ## What is a strobogrammatic prime number?
@@ -79,7 +79,7 @@ strobogrammatic prime:  686989
 strobogrammatic prime:  688889
 {% endhighlight %}
 
-# The end result... 191161.xyz
+# And the winner is... 191161.xyz
 Because I want my dns to support DNSSEC ([reasons...]) I needed to pick a [TLD which root zone has been signed]. I choose some of the prime numbers and a couple cheap TLD, and after reviewing my options, I locked in with 191161.xyz for $5 a year.
 
 
