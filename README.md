@@ -17,4 +17,4 @@ jekyll serve --livereload
 go to http://localhost:4000
 ```
 
-Based on the template [dbyll](https://github.com/dbtek/dbyll/) by dbtek.
+Based on the template [dbyll](https://github.com/dbtek/dbyll/) by [dbtek](https://github.com/dbtek/).
