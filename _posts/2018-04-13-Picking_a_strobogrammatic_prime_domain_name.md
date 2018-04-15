@@ -80,10 +80,9 @@ strobogrammatic prime:  688889
 {% endhighlight %}
 
 # The end result... 191161.xyz
-Because I want my dns to support DNSSEC ([reasons...]) I needed to pick a [TLD which root zone has been signed]. I choose some of the prime numbers and a couple cheap TLD, and after reviewing my options, I locked in with [191161.xyz] for $5 a year.
+Because I want my dns to support DNSSEC ([reasons...]) I needed to pick a [TLD which root zone has been signed]. I choose some of the prime numbers and a couple cheap TLD, and after reviewing my options, I locked in with 191161.xyz for $5 a year.
 
 
 [Wikipedia]: https://en.wikipedia.org/wiki/Strobogrammatic_number
 [reasons...]: https://webmasters.stackexchange.com/questions/35597/how-to-find-domain-registrar-and-dns-hosting-with-good-dnssec-support
 [TLD which root zone has been signed]: https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
-[191161.xyz]: https://191161.xyz

@@ -44,8 +44,7 @@ def html_proofer
       "/Why_I_am_syncing_my_files_with_SyncThing",
       "/puppet-ram-mountpoint",
       "/The-Nikola-Tesla-Museum-is-happening",
-      "/Picking_a_strobogrammatic_prime_domain_name",
-      "https://191161.xyz/"
+      "/Picking_a_strobogrammatic_prime_domain_name"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
