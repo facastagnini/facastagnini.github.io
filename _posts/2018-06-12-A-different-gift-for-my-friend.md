@@ -20,10 +20,21 @@ TODO add a demo gif/video
 ## You will need
 - a Raspberry Pi ( I used a zero w)
 - one micro SD card
-- a bunch of other stuff...
+- one 1W RGB LED
+- a power driver for the LED (keep reading)
+
+TODO add links
 
 ## The hardware
-TODO add schematics, etc
+To connect the Raspberry PI to a 1W LED you will need something to handle the current, this is what I build.
+### List of parts
+- 3 x 2N2222A transistors
+- 3 x 680 Ohms resistor 1/4W
+- 2 x 18 Ohms resistor 1/4W
+- 4 x 10 Ohms resistor 1/4W
+- a prototyping pcb
+### Schematics
+![LEDcircuit](/assets/media/LED_circuit.png)
 
 ## The software
 
