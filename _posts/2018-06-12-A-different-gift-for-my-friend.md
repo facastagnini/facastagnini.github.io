@@ -27,14 +27,23 @@ TODO add links
 
 ## The hardware
 To connect the Raspberry PI to a 1W LED you will need something to handle the current, this is what I build.
+
 ### List of parts
 - 3 x 2N2222A transistors
 - 3 x 680 Ohms resistor 1/4W
 - 2 x 18 Ohms resistor 1/4W
 - 4 x 10 Ohms resistor 1/4W
 - a prototyping pcb
-### Schematics
-![LEDcircuit](/assets/media/LED_circuit.png)
+
+### Schematic
+![LEDcircuit](/assets/media/MrRobot-LED_circuit.png)
+
+### Putting all the pieces together
+I built a simple box, got an old frame from a local store and mounted all the components, here you can see some pictures.
+![MrRobotPic1](/assets/media/MrRobot-Pic1.png)
+![MrRobotPic2](/assets/media/MrRobot-Pic2.png)
+![MrRobotPic3](/assets/media/MrRobot-Pic3.png)
+![MrRobotPic4](/assets/media/MrRobot-Pic4.png)
 
 ## The software
 
