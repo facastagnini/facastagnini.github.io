@@ -1,29 +1,35 @@
 ---
 layout: post
 title: A different gift for my friend
-published: false
+published: true
+fullview: false
+description: When you see something really cool on the internet and you wish you had that idea...
 tags:
 - raspberrypi
 - electronics
-fullview: false
-description: When you see something really cool on the internet and you wish you had that idea...
 ---
 
 # A different gift for my friend
-This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool", that I would have to make a different gift for my friend Diego.
+This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool"... And then I knew that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
 TODO add a demo gif/video
 
 # Build yours
 
-## You will need
-- a Raspberry Pi ( I used a zero w)
-- one micro SD card
-- a bunch of other stuff...
+## You will need stuff
+- 1 Raspberry Pi ( I used a zero w)
+- 1 micro SD card
+- 1 x 1W RGB led ([for example])
+- 3 x 1kohm 1/4W resistors
+- 3 x 680ohm 1/4W resistors
+- 2 x 18ohm 1/4W resistors
+- 4 x 10ohm 1/4W resistors
+- 3 x 2n2222A NPN transistors
 
 ## The hardware
-TODO add schematics, etc
+Put this together and connect it to the RPI:
+![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
 
 ## The software
 
@@ -49,7 +55,6 @@ pi@mrrobot:~ $ sudo update-alternatives --install "/usr/bin/npm" "npm" "/opt/nod
 pi@mrrobot:~ $ sudo npm install --unsafe-perm -g homebridge
 pi@mrrobot:~ $ sudo ln -sf /opt/node/lib/node_modules/homebridge/bin/homebridge /usr/local/bin/homebridge
 
-
 # Install some plugins
 pi@mrrobot:~ $ sudo npm install -g homebridge-pi
 pi@mrrobot:~ $ sudo pm install -g homebridge-better-http-rgb
@@ -62,7 +67,7 @@ pi@mrrobot:~ $ sudo mkdir -p /var/lib/homebridge
 pi@mrrobot:~ $ sudo chown homebridge:homebridge /var/lib/homebridge
 
 # If you dont have one, create the config file.
-pi@mrrobot:~ $ sudo wget -q -O /var/lib/homebridge/config.json https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json
+pi@mrrobot:~ $ test -f /var/lib/homebridge/config.json || sudo wget -q -O /var/lib/homebridge/config.json https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json
 
 # install init script Running Homebridge on Bootup (systemd) https://gist.github.com/johannrichard/0ad0de1feb6adb9eb61a/
 pi@mrrobot:~ $ sudo wget -O /etc/default/homebridge https://gist.githubusercontent.com/johannrichard/0ad0de1feb6adb9eb61a/raw/1cf926e63e553c7cbfacf9970042c5ac876fadfa/homebridge
@@ -83,9 +88,16 @@ pi@mrrobot:~ $ sudo apt install python3 python3-pip
 pi@mrrobot:~ $ sudo pip3 install RPi.GPIO
 {% endhighlight %}
 
+## testing
+This is a handy script to test.
+{% highlight python %}
+#!/bin/env python3
+{% endhighlight %}
 
-[Reynico's present for his friend] http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
-[here] https://www.raspberrypi.org/downloads/raspbian/
-[guide here] https://www.raspberrypi.org/documentation/remote-access/ssh/
-[1] https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
-[3] https://github.com/nfarina/homebridge
+
+[Reynico's present for his friend]: http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
+[here]: https://www.raspberrypi.org/downloads/raspbian/
+[guide here]: https://www.raspberrypi.org/documentation/remote-access/ssh/
+[1]: https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
+[3]: https://github.com/nfarina/homebridge
+[for example]: https://www.ebay.com/itm/1W-3W-5W-Warm-White-Red-Blue-Full-Spectrum-RGB-UV-High-Power-LED-Chip-With-PCB-/322545319762
