@@ -8,26 +8,23 @@ tags:
 - raspberrypi
 - electronics
 ---
-
-# A different gift for my friend
 This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool"... And then I knew that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
 TODO add a demo gif/video
 
-# Build yours
-
-## You will need stuff
+# The hardware
+## You will need this stuff
 - 1 Raspberry Pi ( I used a zero w)
 - 1 micro SD card
 - 1 x 1W RGB led ([for example])
-- 3 x 1kohm 1/4W resistors
-- 3 x 680ohm 1/4W resistors
-- 2 x 18ohm 1/4W resistors
-- 4 x 10ohm 1/4W resistors
+- 3 x 1k Ohms 1/4W resistors
+- 3 x 680 Ohms 1/4W resistors
+- 2 x 18 Ohms 1/4W resistors
+- 4 x 10 Ohms 1/4W resistors
 - 3 x 2n2222A NPN transistors
+- a prototyping pcb
 
-## The hardware
 Put this together and connect it to the RPI:
 ![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
 
