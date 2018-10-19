@@ -1,41 +1,41 @@
 ---
 layout: post
 title: A different gift for my friend
-published: false
+published: true
+fullview: false
+description: When you see something really cool on the internet and you wish you had that idea...
 tags:
 - raspberrypi
 - electronics
-fullview: false
-description: When you see something really cool on the internet and you wish you had that idea...
 ---
-
-# A different gift for my friend
-This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool", that I would have to make a different gift for my friend Diego.
+This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool"... And then I knew that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
 TODO: add a demo gif/video
-
-# Build yours
 
 ## You will need
 - a Raspberry Pi ( I used a zero w)
 - one micro SD card
 - one [1W RGB LED with pcb]
-- a power driver for the LED (keep reading)
 - a normally open button tu turn on and off the pi (handy instructions [here](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi))
+- a power driver for the LED (keep reading)
 
 ## The hardware
 To connect the Raspberry PI to a 1W LED you will need something to handle the current, this is what I build.
 
-### List of parts
-- 3 x 2N2222A NPN transistors
-- 3 x 680 Ohms resistor 1/4W
-- 2 x 18 Ohms resistor 1/4W
-- 4 x 10 Ohms resistor 1/4W
+## You will need this stuff
+- 1 Raspberry Pi ( I used a zero w)
+- 1 micro SD card
+- 1 x 1W RGB led ([for example])
+- 3 x 1k Ohms 1/4W resistors
+- 3 x 680 Ohms 1/4W resistors
+- 2 x 18 Ohms 1/4W resistors
+- 4 x 10 Ohms 1/4W resistors
+- 3 x 2n2222A NPN transistors
 - a prototyping pcb
 
-### Schematic
-![LEDcircuit](/assets/media/MrRobot-LED_circuit.png)
+Put this together and connect it to the RPI:
+![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
 
 ### Putting all the pieces together
 I built a simple box, got an old frame from a local store and mounted all the components. The frame is mounted on hinges and the mask with magnets so it is easy to reach to the electronics if needed. The interior of the box is painted with Balck 2.0 to give the impression the mask is floating. Here you can see some pictures.
@@ -66,7 +66,6 @@ pi@mrrobot:~ $ sudo update-alternatives --install "/usr/bin/npm" "npm" "/opt/nod
 pi@mrrobot:~ $ sudo npm install --unsafe-perm -g homebridge
 pi@mrrobot:~ $ sudo ln -sf /opt/node/lib/node_modules/homebridge/bin/homebridge /usr/local/bin/homebridge
 
-
 # Install some plugins
 pi@mrrobot:~ $ sudo npm install -g homebridge-pi
 pi@mrrobot:~ $ sudo pm install -g homebridge-better-http-rgb
@@ -79,7 +78,7 @@ pi@mrrobot:~ $ sudo mkdir -p /var/lib/homebridge
 pi@mrrobot:~ $ sudo chown homebridge:homebridge /var/lib/homebridge
 
 # If you dont have one, create the config file.
-pi@mrrobot:~ $ sudo wget -q -O /var/lib/homebridge/config.json https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json
+pi@mrrobot:~ $ test -f /var/lib/homebridge/config.json || sudo wget -q -O /var/lib/homebridge/config.json https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json
 
 # install init script Running Homebridge on Bootup (systemd) https://gist.github.com/johannrichard/0ad0de1feb6adb9eb61a/
 pi@mrrobot:~ $ sudo wget -O /etc/default/homebridge https://gist.githubusercontent.com/johannrichard/0ad0de1feb6adb9eb61a/raw/1cf926e63e553c7cbfacf9970042c5ac876fadfa/homebridge
@@ -100,12 +99,19 @@ pi@mrrobot:~ $ sudo apt install python3 python3-pip
 pi@mrrobot:~ $ sudo pip3 install RPi.GPIO
 {% endhighlight %}
 
-TODO hook to iphone, customize config file, add scripts
+# TODO hook to iphone, customize config file, add scripts
 
 
-[Reynico's present for his friend] http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
-[here] https://www.raspberrypi.org/downloads/raspbian/
-[1W RGB LED with pcb] https://www.ebay.com/itm/1W-3W-5W-Watt-High-Power-LED-Chip-Warm-White-UV-Deep-Red-Blue-Green-RGB-With-PCB-/322502129003
-[guide here] https://www.raspberrypi.org/documentation/remote-access/ssh/
-[1] https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
-[3] https://github.com/nfarina/homebridge
+## testing
+This is a handy script to test.
+{% highlight python %}
+#!/bin/env python3
+{% endhighlight %}
+
+
+[Reynico's present for his friend]: http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
+[here]: https://www.raspberrypi.org/downloads/raspbian/
+[guide here]: https://www.raspberrypi.org/documentation/remote-access/ssh/
+[1]: https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
+[3]: https://github.com/nfarina/homebridge
+[for example]: https://www.ebay.com/itm/1W-3W-5W-Warm-White-Red-Blue-Full-Spectrum-RGB-UV-High-Power-LED-Chip-With-PCB-/322545319762
