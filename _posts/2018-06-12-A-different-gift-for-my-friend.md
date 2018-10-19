@@ -13,23 +13,22 @@ description: When you see something really cool on the internet and you wish you
 This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool", that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
-TODO add a demo gif/video
+TODO: add a demo gif/video
 
 # Build yours
 
 ## You will need
 - a Raspberry Pi ( I used a zero w)
 - one micro SD card
-- one 1W RGB LED
+- one [1W RGB LED with pcb]
 - a power driver for the LED (keep reading)
-
-TODO add links
+- a normally open button tu turn on and off the pi (handy instructions [here](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi))
 
 ## The hardware
 To connect the Raspberry PI to a 1W LED you will need something to handle the current, this is what I build.
 
 ### List of parts
-- 3 x 2N2222A transistors
+- 3 x 2N2222A NPN transistors
 - 3 x 680 Ohms resistor 1/4W
 - 2 x 18 Ohms resistor 1/4W
 - 4 x 10 Ohms resistor 1/4W
@@ -39,11 +38,9 @@ To connect the Raspberry PI to a 1W LED you will need something to handle the cu
 ![LEDcircuit](/assets/media/MrRobot-LED_circuit.png)
 
 ### Putting all the pieces together
-I built a simple box, got an old frame from a local store and mounted all the components, here you can see some pictures.
-![MrRobotPic1](/assets/media/MrRobot-Pic1.png)
-![MrRobotPic2](/assets/media/MrRobot-Pic2.png)
-![MrRobotPic3](/assets/media/MrRobot-Pic3.png)
-![MrRobotPic4](/assets/media/MrRobot-Pic4.png)
+I built a simple box, got an old frame from a local store and mounted all the components. The frame is mounted on hinges and the mask with magnets so it is easy to reach to the electronics if needed. The interior of the box is painted with Balck 2.0 to give the impression the mask is floating. Here you can see some pictures.
+
+TODO: add pics or a video
 
 ## The software
 
@@ -52,7 +49,7 @@ I built a simple box, got an old frame from a local store and mounted all the co
 - Update the os and rename the node
 {% highlight bash %}
 # update the os
-pi@raspbian:~ $ sudo apt update && sudo apt -y full-upgrade
+pi@raspbian:~ $ sudo apt update && sudo apt -y full-upgrade && sudo rpi-update
 # Rename the os
 pi@raspbian:~ $ sudo sed -i 's/raspberrypi/mrrobot/' /etc/hosts /etc/hostname
 # reboot to apply the changes
@@ -103,9 +100,12 @@ pi@mrrobot:~ $ sudo apt install python3 python3-pip
 pi@mrrobot:~ $ sudo pip3 install RPi.GPIO
 {% endhighlight %}
 
+TODO hook to iphone, customize config file, add scripts
+
 
 [Reynico's present for his friend] http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
 [here] https://www.raspberrypi.org/downloads/raspbian/
+[1W RGB LED with pcb] https://www.ebay.com/itm/1W-3W-5W-Watt-High-Power-LED-Chip-Warm-White-UV-Deep-Red-Blue-Green-RGB-With-PCB-/322502129003
 [guide here] https://www.raspberrypi.org/documentation/remote-access/ssh/
 [1] https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
 [3] https://github.com/nfarina/homebridge
