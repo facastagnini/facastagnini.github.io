@@ -37,6 +37,7 @@ def html_proofer
       "https://linkedin.com/in/fcastagnini",
       "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/",
       "https://www.resilio.com",
+      "https://www.jamescoyle.net/how-to/943-create-a-ram-disk-in-linux",
       # we need to ignore the permalink
       "/Look_at_me_Dad_I_am_blogging",
       "/Monitoring_RSYSLOG_with_Zabbix",
