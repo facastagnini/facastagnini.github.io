@@ -10,7 +10,7 @@ description: Use RAM memory to do I/O intensive operations instead hitting the H
 ---
 In this times that we have to live in, it is more convenient/efficient to use RAM memory to do I/O intensive operations instead hitting the HDD, or wearing off our precious SSD drives.
 
-James Coyle wrote a [good article](http://www.jamescoyle.net/how-to/943-create-a-ram-disk-in-linux) explaining what a RAM disk is and why you should use it.
+James Coyle wrote a [good article](https://www.jamescoyle.net/how-to/943-create-a-ram-disk-in-linux) explaining what a RAM disk is and why you should use it.
 
 I wrote a simple yet useful puppet module to assist me in my every day tasks with RAM drives, I hope someone can use it too.
 

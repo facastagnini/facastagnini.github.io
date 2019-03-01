@@ -13,7 +13,7 @@ bundle install
 bundle exec rake
 
 # test locally
-jekyll serve --unpublished
+bundle exec jekyll serve --livereload --unpublished
 go to http://localhost:4000
 ```
 
