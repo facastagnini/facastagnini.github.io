@@ -4,8 +4,12 @@ gem install bundler# This repo generates my website: https://facastagnini.github
 [![Build Status](https://travis-ci.org/facastagnini/facastagnini.github.io.svg)](https://travis-ci.org/facastagnini/facastagnini.github.io)
 
 ```
+# install the version of ruby we need
+curl -s https://pages.github.com/versions.json | jq -r .ruby | tee .ruby-version
 brew install rbenv
 rbenv install
+
+# install bundler
 gem install bundler
 bundle install
 

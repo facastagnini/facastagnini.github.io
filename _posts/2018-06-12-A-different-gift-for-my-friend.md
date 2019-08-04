@@ -8,39 +8,36 @@ tags:
 - raspberrypi
 - electronics
 ---
-This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it was so cool"... And then I knew that I would have to make a different gift for my friend Diego.
+This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it is so cool"... And then I knew that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
 TODO: add a demo gif/video
 
-## You will need
-- a Raspberry Pi ( I used a zero w)
-- one micro SD card
-- one [1W RGB LED with pcb]
-- a normally open button tu turn on and off the pi (handy instructions [here](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi))
-- a power driver for the LED (keep reading)
-
 ## The hardware
-To connect the Raspberry PI to a 1W LED you will need something to handle the current, this is what I build.
-
-## You will need this stuff
+### You will need this stuff
 - 1 Raspberry Pi ( I used a zero w)
 - 1 micro SD card
-- 1 x 1W RGB led ([for example])
-- 3 x 1k Ohms 1/4W resistors
-- 3 x 680 Ohms 1/4W resistors
-- 2 x 18 Ohms 1/4W resistors
-- 4 x 10 Ohms 1/4W resistors
-- 3 x 2n2222A NPN transistors
-- a prototyping pcb
+- a normally open button to turn on and off the pi (see instructions [here](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi))
+- power driver for the LED
+  - 1 x [1W RGB LED with pcb]
+  - 3 x 1k Ohms 1/4W resistors
+  - 3 x 680 Ohms 1/4W resistors
+  - 2 x 18 Ohms 1/4W resistors
+  - 4 x 10 Ohms 1/4W resistors
+  - 3 x 2n2222A NPN transistors
+  - a prototyping pcb
+- a frame
+- a box
 
-Put this together and connect it to the RPI:
-![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
 
-### Putting all the pieces together
-I built a simple box, got an old frame from a local store and mounted all the components. The frame is mounted on hinges and the mask with magnets so it is easy to reach to the electronics if needed. The interior of the box is painted with Balck 2.0 to give the impression the mask is floating. Here you can see some pictures.
+#### Putting all the pieces together
+I built a simple box, got an old frame from a local store and mounted all the components. The frame is mounted on hinges and the mask with magnets so it is easy to reach to the electronics if needed. The interior of the box is painted with [Black 2.0] to give the impression the mask is floating. Here you can see some pictures.
 
 TODO: add pics or a video
+![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
+![electronics mounted inside the box](/assets/media/MrRobot-Pic1.jpg)
+
+[Black 2.0]: https://www.culturehustleusa.com/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material
 
 ## The software
 
@@ -99,19 +96,11 @@ pi@mrrobot:~ $ sudo apt install python3 python3-pip
 pi@mrrobot:~ $ sudo pip3 install RPi.GPIO
 {% endhighlight %}
 
-# TODO hook to iphone, customize config file, add scripts
-
-
-## testing
-This is a handy script to test.
-{% highlight python %}
-#!/bin/env python3
-{% endhighlight %}
-
+- TODO document how to customize config file, add scripts, hook to iphone
 
 [Reynico's present for his friend]: http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/
 [here]: https://www.raspberrypi.org/downloads/raspbian/
 [guide here]: https://www.raspberrypi.org/documentation/remote-access/ssh/
 [1]: https://github.com/nfarina/homebridge/wiki/Running-Homebridge-on-a-Raspberry-Pi
 [3]: https://github.com/nfarina/homebridge
-[for example]: https://www.ebay.com/itm/1W-3W-5W-Warm-White-Red-Blue-Full-Spectrum-RGB-UV-High-Power-LED-Chip-With-PCB-/322545319762
+[1W RGB LED with pcb]: https://www.ebay.com/itm/1W-3W-5W-Warm-White-Red-Blue-Full-Spectrum-RGB-UV-High-Power-LED-Chip-With-PCB-/322545319762
