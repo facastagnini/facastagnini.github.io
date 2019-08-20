@@ -46,7 +46,10 @@ def html_proofer
       "/puppet-ram-mountpoint",
       "/The-Nikola-Tesla-Museum-is-happening",
       "/Picking_a_strobogrammatic_prime_domain_name",
-      "/A-different-gift-for-my-friend"
+      "/A-different-gift-for-my-friend",
+      # nico's site seems to be down today
+      "http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/",
+      "/home-assistant-swiss-army-knife"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
