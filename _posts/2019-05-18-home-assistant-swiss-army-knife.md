@@ -1,55 +1,135 @@
 ---
 layout: post
 title: Home Assistant Swiss army knife
-published: false
+published: true
 fullview: false
 description: DIY multi sensor home baseline box.
 tags:
 - esp8266
 - home-assistant
-- tasmota
+- esphome
 ---
 # Why...
-Home automation is adictive...once you have your first device using mqtt to do something, it's a slipery slope. You will start integrating everything, and since there is so much diversity of devices in your house, you will need a bunch of sensors and communication technologies.
+Home automation is adictive...once you have your first device installed, it's a slipery slope. You will start integrating everything, and since there is so much diversity of devices in your house, you will need a bunch of sensors and actuators.
 This is a standard box that I am placing on every room of the house to have a baseline of capabilities:
-- temperature and humidity (AM2302)
-- light sensor (TSL2561)
-- microwave radar movement sensor ([RCWL-0516]) (how to use it https://github.com/arendst/Sonoff-Tasmota/wiki/Wemos-D1-Mini-and-RCWL-0516-Microwave-Radar-Sensor) (review https://www.youtube.com/watch?v=IJoPkKlxFXA)
-- [315Mhz RF transmitter and receiver]
+- temperature and humidity [AM2302]
+- light sensor [TSL2561]
+- microwave radar movement sensor ([RCWL-0516]) ([here is a review])
 
-## Next steps:
-- Carbon Monoxide gas and combustible gas sensor (MQ-9)
-  MQ-9 gas sensor for carbon monoxide, methane, liquefied petroleum gas, the sensor can detect a variety of gases containing carbon monoxide and flammable.
-  Carbon monoxide can be tested 10 to 1000ppm CO, combustible gas range 100 to 10000ppm.
-- Smoke detector (MQ-135)
-  Probe for home, environmental harmful gas detection device , suitable to ammonia , aromatic compounds , sulfur compounds , benzene vapor , smoke and other gases harmful gases , the gas sensitive element concentration range : 10 to 1000ppm
-- IR transceiver?
-
-[RCWL-0516]: https://www.aliexpress.com/item/RCWL-0516-microwave-radar-sensor-module-Human-body-induction-switch-module-Intelligent-sensor/32704946341.html
-[TSL2561]: https://www.ebay.com/itm/TSL2561-Luminosity-Sensor-Breakout-infrared-Light-Sensor-Integrating-Sensor/264220584042
-[AM2302]: https://www.aliexpress.com/item/5PCS-10PCS-lot-DHT22-AM2302-digital-temperature-and-humidity-sensor-Temperature-and-humidity-module-replace-SHT11/32896608843.html
-[315Mhz RF transmitter and receiver]: https://www.ebay.com/itm/315Mhz-RF-transmitter-and-receiver-link-kit-for-Arduino-ARM-MCU-NEW/141977598098
+# Pre-requisites
+You have an instance of Home Assistance with ESPHome ready. There is plenty of tutorial about this on the internet.
 
 # Hardware
 ## list of components used
-- 
+- 1 x [Wemos D1 mini]
+- 1 x [AM2302]
+- 1 x [TSL2561]
+- 1 x [RCWL-0516]
+- 1 x [plastic container]
 
-## Wiring
-I put it together like this: [todo insert picture of diagram]
+## I put it together like this:
+![garage_toolbox_1](/assets/media/garage_toolbox_1.jpg)
+
+## And fit it into a plastic container
+![garage_toolbox_2](/assets/media/garage_toolbox_2.jpg)
+![garage_toolbox_3](/assets/media/garage_toolbox_3.jpg)
 
 # Software
 ## microcontrolled side
-- [Flash Tasmota]
-- backlog of baseline config for every microcontroller I use 'Backlog mqtthost <MQTT_FQDN_OR_IP>; mqttuser <MQTT_USER>; mqttpassword <MQTT_PASSWORD>; hostname <DEVICE_NAME>; topic <DEVICE_NAME>; FriendlyName1 <DEVICE_NAME>;setoption53 1; SetOption19 1' I called mine after the rooms they are in, today I will call it 'garage_toolbox'.
-- configure a generic module and map the sensors
-- configure the motion detector mqtt topic 'backlog switchtopic2 garage_toolbox_motion_detector; SwitchMode2 1'
+- create a new ESPHome device, I called this one garage_toolbox.
+- Edit the esphome garage_toolbox.yaml file so it looks like this:
+{% highlight yaml %}
+substitutions:
+  upper_devicename: Garage Toolbox
 
-[Flash Tasmota]: https://github.com/arendst/Sonoff-Tasmota/wiki/Wemos%20D1%20Mini#using-esptoolpy
+esphome:
+  name: garage_toolbox
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "REPLACE_ME"
+  password: "REPLACE_ME"
+  domain: ".your_local_domain"
+  fast_connect: true
+
+# sync the time from Home Assistant  
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+# Enable logging
+logger:
+
+web_server:
+  port: 80
+
+# Enable Home Assistant API
+api:
+  password: "REPLACE_ME"
+
+ota:
+  password: "REPLACE_ME"
+
+# show status using the built in LED
+status_led:
+  pin:
+    number: GPIO2
+    inverted: True
+
+# https://esphome.io/components/i2c.html#i2c
+# you need to enable i2c before using any devices
+i2c:
+  sda: 14 # D5
+  scl: 12 # D6
+  scan: True
+
+sensor:
+  - platform: wifi_signal
+    name: "${upper_devicename} WiFi signal"
+    update_interval: 60s
+    accuracy_decimals: 0
+
+  - platform: uptime
+    name: "${upper_devicename} uptime"
+    accuracy_decimals: 0
+    
+  # https://esphome.io/components/sensor/tsl2561.html
+  - platform: tsl2561
+    name: "${upper_devicename} Ambient Light"
+    address: 0x39
+    update_interval: 60s
+    accuracy_decimals: 0
+  
+  # https://esphome.io/components/sensor/dht.html
+  - platform: dht
+    pin: D7
+    model: AM2302
+    temperature:
+      name: "${upper_devicename} Temperature"
+      accuracy_decimals: 0
+    humidity:
+      name: "${upper_devicename} Humidity"
+      accuracy_decimals: 0
+    update_interval: 60s
+    
+binary_sensor:
+  # rcwl-0516
+  - platform: gpio
+    pin: D1
+    name: "${upper_devicename} Motion sensor"
+    device_class: motion
+{% endhighlight %}
+- Compile, download the binary and flash ESPHome (again, there is plenty of tutorials about this out there)
+
+After flashing the ESPhome image the micontroller will restart and connect to the wifi.
 
 ## home assistant configuration
-- configure an alias for the motion switch
+- the autodiscovery should take care of finding the new ESPHome device, go to Integrations and you should be able to add it from there.
 
-/config/customize.yaml
-binary_sensor.sonoff2_sw:
-  device_class: motion
-  friendly_name: garage_toolbox motion detector
+[Wemos D1 mini]: https://www.aliexpress.com/item/32845061455.html
+[RCWL-0516]: https://www.aliexpress.com/item/RCWL-0516-microwave-radar-sensor-module-Human-body-induction-switch-module-Intelligent-sensor/32704946341.html
+[TSL2561]: https://www.ebay.com/itm/TSL2561-Luminosity-Sensor-Breakout-infrared-Light-Sensor-Integrating-Sensor/264220584042
+[AM2302]: https://www.aliexpress.com/item/5PCS-10PCS-lot-DHT22-AM2302-digital-temperature-and-humidity-sensor-Temperature-and-humidity-module-replace-SHT11/32896608843.html
+[here is a review]: https://www.youtube.com/watch?v=IJoPkKlxFXA
+[plastic container]: https://www.target.com/p/rectangular-plastic-food-storage-container-made-by-design-153/-/A-53678064
