@@ -9,7 +9,7 @@ markdown: kramdown
 disqus: dbyll
 google_analytics: UA-28304401-3
 title: Federico Ariel Castagnini's blog
-url: "https://facastagnini.github.io"
+url: "http://blog.191161.xyz"
 
 defaults:
   -
@@ -37,6 +37,7 @@ author:
 # rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
+livereload: true
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
