@@ -8,6 +8,7 @@ tags:
 - raspberrypi
 - electronics
 ---
+![header](/assets/media/MrRobot-header.jpg)
 This is sort of a fan post, because when I saw [Reynico's present for his friend] I thought "Man, that it is so cool"... And then I knew that I would have to make a different gift for my friend Diego.
 Diego is a fan of Mr. Robot, and this is his birthday present.
 
@@ -29,13 +30,16 @@ TODO: add a demo gif/video
 - a frame
 - a box
 
-
 #### Putting all the pieces together
 I built a simple box, got an old frame from a local store and mounted all the components. The frame is mounted on hinges and the mask with magnets so it is easy to reach to the electronics if needed. The interior of the box is painted with [Black 2.0] to give the impression the mask is floating. Here you can see some pictures.
 
-TODO: add pics or a video
 ![Schematic](/assets/media/Mr.Robot_Schematics/Mr.Robot_Schematics.png)
+
+##### Mounting the components in the box
 ![electronics mounted inside the box](/assets/media/MrRobot-Pic1.jpg)
+
+##### finished, the mask is mounted with magnets.
+![electronics mounted inside the box](/assets/media/MrRobot-Pic3.jpg)
 
 [Black 2.0]: https://www.culturehustleusa.com/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material
 
