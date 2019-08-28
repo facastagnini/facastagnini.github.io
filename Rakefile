@@ -51,7 +51,7 @@ def html_proofer
       "http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/",
       "/home-assistant-swiss-army-knife",
       "/how-to-flash-YX-WS01-smart-plug",
-      "https://smile.amazon.com/gp/product/B078K432TK"
+      "https://smile.amazon.com/gp/product/B078K432TK/"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
