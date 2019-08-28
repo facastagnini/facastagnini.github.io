@@ -49,7 +49,8 @@ def html_proofer
       "/A-different-gift-for-my-friend",
       # nico's site seems to be down today
       "http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/",
-      "/home-assistant-swiss-army-knife"
+      "/home-assistant-swiss-army-knife",
+      "/how-to-flash-YX-WS01-smart-plug"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
