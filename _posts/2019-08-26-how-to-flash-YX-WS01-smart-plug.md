@@ -6,7 +6,6 @@ fullview: false
 description: How to flash any YX-WS01 tuya smart plug
 tags:
 - esp8266
-- home-assistant
 - esphome
 ---
 # What we know about this plugs

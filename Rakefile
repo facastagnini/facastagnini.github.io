@@ -33,7 +33,7 @@ end
 def html_proofer
   puts "HTML Proofer version: #{HTMLProofer::VERSION}"
   HTMLProofer.check_directory('./_site', {
-		:url_ignore => [
+    :url_ignore => [
       "https://linkedin.com/in/fcastagnini",
       "https://www.indiegogo.com/projects/buy-a-brick-for-the-nikola-tesla-museum#/",
       "https://www.resilio.com",
@@ -50,7 +50,8 @@ def html_proofer
       # nico's site seems to be down today
       "http://blog.reyni.co/2018/01/20/a-different-birthday-present-for-my-friend/",
       "/home-assistant-swiss-army-knife",
-      "/how-to-flash-YX-WS01-smart-plug"
+      "/how-to-flash-YX-WS01-smart-plug",
+      "https://smile.amazon.com/gp/product/B078K432TK"
     ],
     :checks_to_ignore => [],
     :allow_hash_href => true,
