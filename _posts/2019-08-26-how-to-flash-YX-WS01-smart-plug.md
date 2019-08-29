@@ -90,7 +90,7 @@ light:
 switch:
   - platform: gpio
     name: ${friendly_name}
-    id: ${devicename}
+    id: relay
     pin:
       number: GPIO14
     on_turn_on:
@@ -123,7 +123,7 @@ binary_sensor:
       mode: INPUT
     on_press:
       then:
-        - switch.toggle: ${devicename}
+        - switch.toggle: relay
 {% endhighlight %}
 
 ## 2 - create one of this for each outlet
