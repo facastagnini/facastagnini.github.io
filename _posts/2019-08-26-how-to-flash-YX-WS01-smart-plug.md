@@ -7,6 +7,7 @@ description: How to flash any YX-WS01 tuya smart plug
 tags:
 - esp8266
 - esphome
+- tuya
 ---
 # What we know about this plugs
 Brand: Amysen, Esicoo, etc. Seems to be another tuya space trooper.
@@ -28,7 +29,7 @@ I couldnt find a guide anywhere, so this might be the first one for this plug.
 Jonathan from [SuperHouseTV] teaches [how to flash anything with an esp8266, even if you dont know the pinout], so we just have to open it and solder 5 cables in the right places, easy right?
 
 ## 1 - Open it
-I put it in a vise, compress it and used an exacto knife to help the plastic split. Release the vise, rotate the plug and repeat until the welded plastic started to give. Then used a couple screw drivers to pry the lid off.
+I put it in a vise, compress it and used an exacto knife to help the plastic split. Release the vise, rotate the plug and repeat until the welded plastic starts to give. Then use a couple screw drivers to pry the lid off.
 If you are careful, you can get it oppened with minimal aestetic damage. DO NOT RUSH.
 
 ## 2 - Detach the board from the male plug
