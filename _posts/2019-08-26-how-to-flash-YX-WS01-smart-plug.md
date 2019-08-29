@@ -17,7 +17,7 @@ Model number: YX-WS01
 
 [Teardown](https://www.youtube.com/watch?v=Xt_qkRCsYgg)
 
-I love the quality of this plugs, they are well built and sturdy, unfurtunatelly getting them to run a custom firmware is a pain, they really really want you to leave the original firmware. I will try to avoid this plugs and get something easier to flash in the future.
+I love the quality of this plugs, they are well built and sturdy, unfortunately getting them to run a custom firmware is a pain, they really really want you to leave the original firmware. I will try to avoid this plugs and get something easier to flash in the future.
 
 # tuya-convert doesnt work anymore
 I ordered this plugs because I saw that people where flashing them with tuya-convert, but didnt work...bummer, the factory firmware has been patched, so I had to find another way to flash it. Give it a try with the [digiblurDIY guide], you might have one with the outdated firmware.
@@ -29,7 +29,7 @@ Jonathan from [SuperHouseTV] teaches [how to flash anything with an esp8266, eve
 
 ## 1 - Open it
 I put it in a vise, compress it and used an exacto knife to help the plastic split. Release the vise, rotate the plug and repeat until the welded plastic started to give. Then used a couple screw drivers to pry the lid off.
-If you are careful, you can get it oppened it with minimal aestetic damage. DO NOT RUSH.
+If you are careful, you can get it oppened with minimal aestetic damage. DO NOT RUSH.
 
 ## 2 - Detach the board from the male plug
 Once the lid poped out, you need to remove the male plug from the circuit board, this is hard because all that metal is disipating the heat, so it may take a while.
@@ -38,7 +38,7 @@ Once the lid poped out, you need to remove the male plug from the circuit board,
 ![garage_toolbox_2](/assets/media/YX-WS01/1.jpg)
 ![garage_toolbox_3](/assets/media/YX-WS01/2.jpg)
 
-# Prepate the custom firmware
+# Prepare the custom firmware
 You could download the tasmota image or make your own. I used [ESPHome](https://esphome.io) to create a custom firmware image. Took most of the configuration from [here](https://community.home-assistant.io/t/esicoo-yx-ws01-smart-plug/111478)
 
 Since I have several of this plugs, I used a template.
