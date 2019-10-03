@@ -26,6 +26,36 @@ body{
 	color: #fff;
 }
 
+.left {
+    float:left
+}
+
+.right {
+    float:right
+}
+
+.align-right {
+    text-align:right
+}
+
+.align-left {
+    text-align:left
+}
+
+.align-center {
+    text-align:center
+}
+
+.improve {
+    padding-top:25px;
+    font-size:16px
+}
+
+.improve a {
+    color:#999;
+    text-shadow: none;
+}
+
 a.nav-link {
 	padding-bottom: 5px;
 	padding-top: 7px;
@@ -87,6 +117,15 @@ article .share .gplus:hover {
 .page-header {
 	color: #e74c3c;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+@media screen and (max-width: 568px) {
+    .center-on-mobiles {
+        text-align:center !important
+    }
+    .hide-on-mobiles {
+        display:none !important
+    }
 }
 
 @media only screen and (min-width: 768px) {
