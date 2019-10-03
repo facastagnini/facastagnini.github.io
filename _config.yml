@@ -11,6 +11,9 @@ google_analytics: UA-28304401-3
 title: Federico Ariel Castagnini's blog
 url: "http://blog.191161.xyz"
 
+# used to add the edit button
+git_repo_url: https://www.github.com/facastagnini/facastagnini.github.io 
+
 defaults:
   -
     scope:
@@ -18,7 +21,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      title: Federico Castagnini's blog
+      title: Federico Ariel Castagnini's blog
 
 description: Stylish Jekyll Theme
 author:
@@ -27,7 +30,6 @@ author:
   github: facastagnini
   gitlab: facastagnini
   # twitter: dbtek
-  # pinterest: asd123
   linkedin: fcastagnini
   hackerrank: facastagnini
   bio: A minimal blog about technology.
