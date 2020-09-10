@@ -130,6 +130,6 @@ After flashing the ESPhome image the micontroller will restart and connect to th
 [Wemos D1 mini]: https://www.aliexpress.com/item/32845061455.html
 [RCWL-0516]: https://www.aliexpress.com/item/RCWL-0516-microwave-radar-sensor-module-Human-body-induction-switch-module-Intelligent-sensor/32704946341.html
 [TSL2561]: https://www.ebay.com/itm/TSL2561-Luminosity-Sensor-Breakout-infrared-Light-Sensor-Integrating-Sensor/264220584042
-[AM2302]: https://www.aliexpress.com/item/5PCS-10PCS-lot-DHT22-AM2302-digital-temperature-and-humidity-sensor-Temperature-and-humidity-module-replace-SHT11/32896608843.html
+[AM2302]: https://www.aliexpress.com/wholesale?SearchText=AM2302
 [here is a review]: https://www.youtube.com/watch?v=IJoPkKlxFXA
 [plastic container]: https://www.target.com/p/rectangular-plastic-food-storage-container-made-by-design-153/-/A-53678064
