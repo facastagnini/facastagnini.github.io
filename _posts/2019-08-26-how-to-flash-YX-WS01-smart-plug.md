@@ -9,6 +9,7 @@ tags:
 - esphome
 - tuya
 ---
+![the_plug](/assets/media/YX-WS01/plug.png)
 # What we know about these plugs
 Brand: Amysen, Esicoo, etc. Seems to be another tuya space trooper.
 
@@ -21,7 +22,9 @@ Model number: YX-WS01
 I love the quality of these plugs, they are well built and sturdy, unfortunately getting them to run a custom firmware is a pain, they really really want you to leave the original firmware. I will try to avoid these plugs and get something easier to flash in the future.
 
 # tuya-convert doesnt work anymore
-I ordered these plugs because I saw that people where flashing them with tuya-convert, but didnt work...bummer, the factory firmware has been patched, so I had to find another way to flash it. Give it a try with the [digiblurDIY guide], you might have one with the outdated firmware.
+I ordered these plugs because I saw that people where flashing them with tuya-convert, but didnt work...bummer, the factory firmware has been patched, so I had to find another way to flash it. Give it a try with the [digiblurDIY guide](https://www.digiblur.com/2019/01/flash-tuya-smart-switches-over-air-no.html), you might have one with the outdated firmware.
+
+*Update 10/03/2019:* a new [digiblurDIY post](https://www.digiblur.com/2019/08/tuya-convert-whats-next-solderless.html) address the same problem with other devices.
 
 # Hack it
 I couldnt find a guide anywhere, so this might be the first one for this plug. 
@@ -36,8 +39,8 @@ If you are careful, you can get it oppened with minimal aestetic damage. DO NOT 
 Once the lid poped out, you need to remove the male plug from the circuit board, this is hard because all that metal is disipating the heat, so it may take a while.
 
 ## 3 - Wire it like this
-![garage_toolbox_2](/assets/media/YX-WS01/1.jpg)
-![garage_toolbox_3](/assets/media/YX-WS01/2.jpg)
+![1](/assets/media/YX-WS01/1.jpg)
+![2](/assets/media/YX-WS01/2.jpg)
 
 # Prepare the custom firmware
 You could download the tasmota image or make your own. I used [ESPHome](https://esphome.io) to create a custom firmware image. Took most of the configuration from [here](https://community.home-assistant.io/t/esicoo-yx-ws01-smart-plug/111478)
