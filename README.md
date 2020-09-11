@@ -10,7 +10,7 @@ brew install rbenv
 rbenv install
 
 # install bundler
-gem install bundler
+gem install --user bundler
 bundle install
 
 # run tests
