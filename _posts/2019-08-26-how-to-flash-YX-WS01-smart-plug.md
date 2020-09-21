@@ -24,7 +24,8 @@ I love the quality of these plugs, they are well built and sturdy, unfortunately
 # tuya-convert doesnt work anymore
 I ordered these plugs because I saw that people where flashing them with tuya-convert, but didnt work...bummer, the factory firmware has been patched, so I had to find another way to flash it. Give it a try with the [digiblurDIY guide](https://www.digiblur.com/2019/01/flash-tuya-smart-switches-over-air-no.html), you might have one with the outdated firmware.
 
-*Update 10/03/2019:* a new [digiblurDIY post](https://www.digiblur.com/2019/08/tuya-convert-whats-next-solderless.html) address the same problem with other devices.
+*Update 20190310:* a new [digiblurDIY post](https://www.digiblur.com/2019/08/tuya-convert-whats-next-solderless.html) address the same problem with other devices.
+*Update 20200921:* [always up to date guide to flash esphome with tuya convert!](https://esphome-configs.io/guides/tuya-convert/)
 
 # Hack it
 I couldnt find a guide anywhere, so this might be the first one for this plug. 
